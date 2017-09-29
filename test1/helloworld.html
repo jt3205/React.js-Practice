@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>HelloWorld</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
+
+	<script>
+		class Codelab extends React.Component{
+		  render(){
+		    let text = "Hi, I am Codelab";
+		    let style = {backgroundColor:'aqua'}
+		    return (
+		      <div style={style}>{text}</div>
+		    );
+		  }
+		}
+
+		class App extends React.Component{
+		  render(){
+		    return (
+		      <Codelab/>
+		    );
+		  }
+		}
+
+		ReactDOM.render(<App/>,document.getElementById('root'));
+	</script>
+</head>
+<body>
+	<div id="root"></div>
+</body>
+</html>
