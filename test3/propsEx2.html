@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.js"></script>
+	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+	<script type="text/babel">
+		class Codelab extends React.Component{
+			render(){
+				return (
+					<div>
+						<h1>Hello {this.props.name}</h1>
+						<h2>{this.props.number}</h2>
+						<div>{this.props.children}</div>
+					</div>
+				);
+			}
+		}
+		Codelab.propTypes = {
+			name:React.PropTypes.string,
+			number:React.PropTypes.number.isRequired
+		};
+		Codelab.defaultProps = {
+			name:'Unknown'
+		}
+		class App extends React.Component{
+			render(){
+				return (
+					<Codelab name={this.props.name} number={this.props.number}>{this.props.children}</Codelab>
+				);
+			}
+		}
+
+		ReactDOM.render(<App number={3242}>App 사이에 있는거</App>, document.getElementById('root'));
+	</script>
+</head>
+<body>
+	<div id="root"></div>
+</body>
+</html>

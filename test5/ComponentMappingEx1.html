@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.js"></script>
+	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+	<script type="text/babel">
+	class ContactInfo extends React.Component {
+		render(){
+			return(
+				<div>{this.props.contact.name} {this.props.contact.phone}</div>
+			)
+		}
+	}
+
+	class Contact extends React.Component{
+
+		constructor(props){
+			super(props);
+			this.state = {
+				contactData:[
+					{name:'Abet',phone:'010-0000-1111'},
+					{name:'Bbet',phone:'010-0000-2222'},
+					{name:'Cbet',phone:'010-0000-3333'},
+					{name:'Dbet',phone:'010-0000-4444'}
+				]
+			}
+		}
+		render() {
+			const.mapToComponent = (data) => {
+				return data.map((contact, i) => {
+					return (<ContactInfo contact={contact} key={i}></ContactInfo>);
+				});
+			}
+			return(
+				<div>
+					{mapToComponent{this.state.contactData}}
+				</div>
+			);
+		}
+	}
+
+
+	class App extends React.Component{
+		render(){
+			return (
+				<Contact></Contact>
+			);
+		}
+	}
+
+	ReactDOM.render(<App></App>, document.getElementById('root'));
+	</script>
+</head>
+<body>
+	<div id="root"></div>
+</body>
+</html>

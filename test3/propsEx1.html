@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
+	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+	<script type="text/babel">
+		class Codelab extends React.Component{
+		  render(){
+		    return (
+		      <div>
+				<h1>Hello {this.props.name}</h1>
+				<div>{this.props.children}</div>
+		      </div>
+		    );
+		  }
+		}
+		class App extends React.Component{
+		  render(){
+		    return (
+		      <Codelab name={this.props.name}>{this.props.children}</Codelab>
+		    );
+		  }
+		}
+
+		ReactDOM.render(<App name="App Name">App 사이에 있는거</App>, document.getElementById('root'));
+	</script>
+</head>
+<body>
+	<div id="root"></div>
+</body>
+</html>
