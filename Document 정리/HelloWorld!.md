@@ -1,6 +1,6 @@
 HelloWorld!
 =============
-##1. 시작
+1. 시작
 ---------
 React를 해보는 가장 쉬운 방법은 [CodePen](http://codepen.io/gaearon/pen/ZpvBNJ?editors=0010)을 사용하는 것입니다.<br>
 아무것도 설치할 필요 없이 그냥 예제를 따라가기만 하면 됩니다.<br>
