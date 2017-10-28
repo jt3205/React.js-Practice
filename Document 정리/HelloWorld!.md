@@ -1,7 +1,8 @@
 HelloWorld!
 =============
-1. 시작
+시작
 ---------
+--------
 React를 해보는 가장 쉬운 방법은 [CodePen](http://codepen.io/gaearon/pen/ZpvBNJ?editors=0010)을 사용하는 것입니다.<br>
 아무것도 설치할 필요 없이 그냥 예제를 따라가기만 하면 됩니다.<br>
 가장 간단한 예제를 보겠습니다
@@ -16,8 +17,8 @@ root라는 id의 DOM객체에 Hello, world! 를 랜더링합니다.<br>
 잘 사용할 수 있게 된다면 작은 단위에 컴포넌트들로 복잡한 앱을 만들 수 있습니다.<br>
 
 ------------------
-
 ### 자바스크립트에 대하여
+---------------
 React는 JavaScript 라이브러리이기 때문에 JavaScript에 대한 기본지식이 필요합니다.<br>
 아직 JavaScript를 잘 다루지 못한다면 [JavaScript를 더 공부](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)하는게 좋을것입니다.<br>
 <br>

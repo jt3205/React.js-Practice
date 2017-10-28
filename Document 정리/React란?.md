@@ -1,15 +1,17 @@
 리액트란? / 설치
 ================
-1. 리액트란?
+리액트란?
 ---------
+--------
 페이스북에서 개발한 유저 인터페이스 라이브러리입니다.<br>
 개발자로 하여금 재사용 가능한 UI를 생성 할 수 있게 해줍니다.<br>
 현재 페이스북, 인스타그램, 야후, 넷플릭스등의 큰 서비스들에서 사용되고 있습니다.<br>
 이 라이브러리는 ***Virtual DOM*** 이라는 개넘을 통하여 뷰에서 *필요한 부분만 업데이트* 할 수 있게 해줍니다.<br>
 React는 라이브러리이기 때문에 여러 프로젝트에 적용할 수 있으며 Angular.js등과 함께도 사용할 수 있습니다.
 *********
-2. 설치
+설치
 ----------
+--------
 React를 간단하게만 사용해보고 싶다면 *[CodePen](https://codepen.io/gaearon/pen/rrpgNB?editors=0010)* 으로도 충분히 가능합니다.<br>
 [React Create App](http://github.com/facebookincubator/create-react-app)은 React 단일 응용프로그램을 만들때 정말 유용합니다.<br>
 좋은 개발 환경, 개발 경험, 최신 자바스크립트를 경험할 수 있습니다.<br>
@@ -35,7 +37,8 @@ Create React App은 백앤드, 데이터베이스를 처리하지 않습니다.<
 <br>
 실행할 준비가 되었다면 ```npm run build```을 실행함으로써 ```build```폴더에서 최적화 된 빌드를 생성할 수 있습니다.<br>
 *****
-3. 기존 어플리케이션에 추가
+기존 어플리케이션에 추가
+-----
 -----
 앱을 처음부터 다시 설치해야하는 귀찮음따위는 없습니다.<br>
 프로그램의 일부분에 React를 추가해서 작동을 확인할 수 있습니다.<br>
@@ -68,7 +71,9 @@ npm install --save react react-dom
 
 Yarn과 npm 모두 [npm 레지스트리](https://www.npmjs.com/) 에서 패키지를 다운로드합니다.
 
+---------
 ### ES6 및 JSX 사용
+-----------
 React with [Babel](http://babeljs.io/) 을 사용하면 JavaScript 코드에서 ES6 및 JSX를 사용할 수 있습니다.<br>
 *ES6* 는 최신 자바스크립트 문법인데 코드가 간결하고 명확해 졌습니다.<br>
 *JSX* 는 React에서 작동하는 JavaScript의 확장 기능입니다.<br>
@@ -76,7 +81,9 @@ React with [Babel](http://babeljs.io/) 을 사용하면 JavaScript 코드에서 
 Babel 설치 안내에서는 어떻게 다양한 빌드 환경에서 Babel을 사용할 수 있는지 설명합니다.<br>
 .babelrc 에서 [babel-preset-react](http://babeljs.io/docs/plugins/preset-react/#basic-setup-with-the-cli-), [babel-preset-env](http://babeljs.io/docs/plugins/preset-env/)를 사용 가능하도록 설정 했는지 확인해야 합니다.
 
+---------
 ### Hello World (ES6 및 JSX 사용)
+---------
 [webpack](https://webpack.js.org/) 또는 [Browserify](http://browserify.org/) 와 같은 bundler을 사용하여 모듈단위의 코드를 작성하여 작은 패키지로 묶어 로딩 시간을 최적화 할 수 있습니다.<br>
 간단한 React 예제입니다.
 ```JSX
@@ -92,7 +99,9 @@ ReactDOM.render(
 다른 자바스크립트 UI 라이브러리로 만든 기존 앱 DOM요소 내부에도 랜더링 시킬수 있습니다.<br>
 ~~이를테면 Angular.js라던가? 근데 Angular는 라이브러리가 아닌데...~~
 
+-----
 ### CDN 사용
+------
 npm을 사용하지 않는다면 CDN을 사용할 수 있습니다.
 ```HTML
 <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
