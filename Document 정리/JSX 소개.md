@@ -2,7 +2,7 @@ JSX 소개
 ==========
 
 ## 시작
-
+------
 이런방식의 변수선언를 생각해봅시다.
 ```JSX
 const element = <h1>Hello, world!</h1>;
